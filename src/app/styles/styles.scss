@@ -1,0 +1,40 @@
+@import "./varibles.scss";
+@import "./mixins.scss";
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+#root,
+#app {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+}
+
+body {
+  background: $white;
+  font-family: "Raleway-Regular", sans-serif;
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+  width: 100vw;
+  min-height: 100vh;
+  color: $black;
+  -webkit-tap-highlight-color: transparent;
+  scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1280px;
+  padding: 0 15px;
+}
+
+section {
+  scroll-snap-stop: always;
+}
